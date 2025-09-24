@@ -31,7 +31,7 @@
 
     <style name="ResultTextStyle">
         <item name="android:textColor">#FFFFFF</item>
-        <item name="android:textSize">34sp</item>
+        <item name="android:textSize">40sp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:gravity">end</item>
         <item name="android:padding">16dp</item>

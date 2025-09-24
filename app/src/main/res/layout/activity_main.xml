@@ -10,8 +10,8 @@
 
     <TableLayout
         android:id="@+id/tableLayout"
-        android:layout_width="345dp"
-        android:layout_height="497dp"
+        android:layout_width="376dp"
+        android:layout_height="482dp"
         android:layout_marginBottom="44dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -216,8 +216,8 @@
     <TextView
         android:id="@+id/tvRes"
         style="@style/ResultTextStyle"
-        android:layout_width="345dp"
-        android:layout_height="71dp"
+        android:layout_width="372dp"
+        android:layout_height="81dp"
         android:layout_marginBottom="32dp"
         android:text="0"
         android:textAlignment="textEnd"
