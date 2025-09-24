@@ -5,21 +5,24 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".MainActivity">
 
     <TableLayout
         android:id="@+id/tableLayout"
-        android:layout_width="356dp"
-        android:layout_height="495dp"
+        android:layout_width="345dp"
+        android:layout_height="497dp"
         android:layout_marginBottom="44dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent">
+
         <TableRow>
 
             <Button
                 android:id="@+id/btnPorcentaje"
+                style="@style/Options"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="%" />
@@ -27,59 +30,66 @@
 
             <Button
                 android:id="@+id/btnParentesiIzq"
+                style="@style/Options"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="(" />
 
+
             <Button
                 android:id="@+id/btnParentesiDer"
+                style="@style/Options"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text=")" />
+                android:text=")"
+
+                />
 
             <Button
-                android:id="@+id/btnClear"
+                android:id="@+id/btnRestar"
+                style="@style/Options"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="C" />
+                android:text="-" />
+
 
         </TableRow>
+
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <Button
                 android:id="@+id/btn7"
-                style="@style/Widget.AppCompat.Button.Borderless"
+                style="@style/MyButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="7"
-                android:textColor="@color/black" />
+                android:text="7" />
 
             <Button
                 android:id="@+id/btn8"
-                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                style="@style/MyButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="8"
-                android:textColor="@color/black"
                 android:textColorHighlight="@color/pink"
                 android:textColorHint="@color/design_default_color_error"
                 android:textColorLink="#3F51B5" />
 
             <Button
                 android:id="@+id/btn9"
-                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                style="@style/MyButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="9"
-                android:textColor="@color/black"
                 android:textColorHighlight="@color/pink"
                 android:textColorHint="@color/design_default_color_error"
                 android:textColorLink="#3F51B5" />
 
             <Button
                 android:id="@+id/btnMultiplicar"
+                style="@style/Options"
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="*" />
@@ -92,36 +102,34 @@
 
             <Button
                 android:id="@+id/btn4"
-                style="@style/Widget.AppCompat.Button.Borderless"
+                style="@style/MyButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="4"
-                android:textColor="@color/black" />
+                android:text="4" />
 
             <Button
                 android:id="@+id/btn5"
-                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                style="@style/MyButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="5"
-                android:textColor="@color/black"
                 android:textColorHighlight="@color/pink"
                 android:textColorHint="@color/design_default_color_error"
                 android:textColorLink="#3F51B5" />
 
             <Button
                 android:id="@+id/btn6"
-                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                style="@style/MyButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="6"
-                android:textColor="@color/black"
                 android:textColorHighlight="@color/pink"
                 android:textColorHint="@color/design_default_color_error"
                 android:textColorLink="#3F51B5" />
 
             <Button
                 android:id="@+id/btnDiv"
+                style="@style/Options"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="/" />
@@ -134,36 +142,34 @@
 
             <Button
                 android:id="@+id/btn1"
-                style="@style/Widget.AppCompat.Button.Borderless"
+                style="@style/MyButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="1"
-                android:textColor="@color/black" />
+                android:text="1" />
 
             <Button
                 android:id="@+id/btn2"
-                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                style="@style/MyButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="2"
-                android:textColor="@color/black"
                 android:textColorHighlight="@color/pink"
                 android:textColorHint="@color/design_default_color_error"
                 android:textColorLink="#3F51B5" />
 
             <Button
                 android:id="@+id/btn3"
-                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                style="@style/MyButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="3"
-                android:textColor="@color/black"
                 android:textColorHighlight="@color/pink"
                 android:textColorHint="@color/design_default_color_error"
                 android:textColorLink="#3F51B5" />
 
             <Button
                 android:id="@+id/btnSum"
+                style="@style/Options"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="+" />
@@ -175,32 +181,33 @@
             android:layout_height="84dp">
 
             <Button
+                android:id="@+id/btnClear"
+                style="@style/ClearButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="C" />
+
+            <Button
                 android:id="@+id/btn0"
-                style="@style/Widget.AppCompat.Button.Borderless"
+                style="@style/MyButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
-                android:textColor="@color/black" />
+                android:text="0" />
 
             <Button
                 android:id="@+id/btnComa"
-                style="@style/Widget.AppCompat.Button.Borderless"
+                style="@style/MyButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text=","
-                android:textColor="@color/black" />
+                android:text="," />
 
             <Button
                 android:id="@+id/buttonEqual"
+                style="@style/EqualButtonStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="=" />
 
-            <Button
-                android:id="@+id/btnRestar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="-" />
 
         </TableRow>
 
@@ -208,8 +215,9 @@
 
     <TextView
         android:id="@+id/tvRes"
-        android:layout_width="353dp"
-        android:layout_height="68dp"
+        style="@style/ResultTextStyle"
+        android:layout_width="345dp"
+        android:layout_height="71dp"
         android:layout_marginBottom="32dp"
         android:text="0"
         android:textAlignment="textEnd"
