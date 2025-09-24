@@ -118,8 +118,8 @@ public class MainActivity extends AppCompatActivity {
         DoubleEvaluator evaluator = new DoubleEvaluator();
 
         try {
-            Double result = evaluator.evaluate(expressio.toString());
-
+            String expr = prepararExpressio(expressio.toString());
+            Double result = evaluator.evaluate(expr);
             // Mostrem resultat
             tvRes.setText(result.toString());
 
@@ -153,4 +153,24 @@ public class MainActivity extends AppCompatActivity {
         tvRes.setText("");
 
     }
+    private String prepararExpressio(String expr) {
+        StringBuilder corregida = new StringBuilder();
+
+        for (int i = 0; i < expr.length(); i++) {
+            char c = expr.charAt(i);
+
+            // Si el char actual es '(' y el anterior es un número o ')'
+            if (c == '(' && i > 0) {
+                char prev = expr.charAt(i - 1);
+                if (Character.isDigit(prev) || prev == ')') {
+                    corregida.append('*');
+                }
+            }
+
+            corregida.append(c);
+        }
+
+        return corregida.toString();
+    }
+
 }
