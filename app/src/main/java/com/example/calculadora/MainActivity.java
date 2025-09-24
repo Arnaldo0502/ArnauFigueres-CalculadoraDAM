@@ -91,7 +91,20 @@ public class MainActivity extends AppCompatActivity {
         // Permetre '+' només si encara no n'hi ha (evita "33++-5")
         // codi ...
 
-        expressio.append(operacio);
+        if (expressio.length() > 0){
+            char ultim = expressio.charAt(expressio.length() -1);
+
+            if ("+-*/.%".indexOf(ultim) != -1) {
+                //substituir pel nou simbol
+                expressio.setCharAt(expressio.length() -1, operacio.charAt(0));
+            }else {expressio.append((operacio));}
+        }else {
+            // Si està buida, només permet nombres negatius
+            if (operacio.equals("-")) {
+                expressio.append(operacio);
+            }
+        }
+
         tvRes.setText(expressio.toString());
         actualitzar();
     }
